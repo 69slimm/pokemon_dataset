@@ -42,7 +42,7 @@ for i in lst:
         weight = b['weight']
         height = b['height']
         cur.execute(
-            "INSERT INTO abuser.pokemon (nama, abilities, species, weight, height) VALUES (?, ?, ?, ?, ?)", (nama, abilities, spesies, weight, height))
+            "INSERT INTO pokemon (nama, abilities, species, weight, height) VALUES (?, ?, ?, ?, ?)", (nama, abilities, spesies, weight, height))
 
 
 conn.commit() 
