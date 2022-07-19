@@ -24,7 +24,8 @@ while True:
 
 
 for i in kriteria:
-    
+    print("########################################")
+    print("########################################")
     if i == "1":
         print("Masukkan nama abiliti. Jika lebih dari satu, di pisah menggunakan spasi")
         while True:
