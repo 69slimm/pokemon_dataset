@@ -1,5 +1,3 @@
-from threading import local
-from pandas import isnull
 import mariadb
 import sys
 from tabulate import tabulate
