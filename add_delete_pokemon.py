@@ -31,7 +31,7 @@ if pilihan == "1":
                 if not abiliti_baru:
                     print("HARUS DI ISI")
                 else:
-                    query = f"INSERT INTO pokemon_mini SELECT nama, '{abiliti_baru}' AS abilities, species, weight, height FROM pokemon_mini WHERE nama = '{pokemon}' GROUP BY 1,2,3,4;"
+                    query = f"INSERT INTO pokemon SELECT nama, '{abiliti_baru}' AS abilities, species, weight, height FROM pokemon WHERE nama = '{pokemon}' GROUP BY 1,2,3,4;"
                     break
 
 elif pilihan == "2":
@@ -47,7 +47,7 @@ elif pilihan == "2":
                 if not abiliti_del:
                     print("HARUS DI ISI")
                 else:
-                    query = f"DELETE from pokemon_mini WHERE nama = '{pokemon}' AND abilities = '{abiliti_del}';"
+                    query = f"DELETE from pokemon WHERE nama = '{pokemon}' AND abilities = '{abiliti_del}';"
                     break
 
 cur = conn.cursor()
