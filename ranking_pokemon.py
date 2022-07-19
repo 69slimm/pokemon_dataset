@@ -10,7 +10,7 @@ conn = mariadb.connect(
         database="abuser"
 )
 
-query = "SELECT nama, COUNT(*) AS rnk FROM abuser.pokemon GROUP BY 1 order BY 2 DESC"
+query = "SELECT nama, COUNT(*) AS rnk FROM pokemon GROUP BY 1 order BY 2 DESC"
 
 cur = conn.cursor()
 cur.execute(query)
